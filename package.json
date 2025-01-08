@@ -1,0 +1,32 @@
+{
+  "name": "notion-automation",
+  "version": "1.0.0",
+  "description": "Notion 데이터베이스 자동화 도구",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taewonnn/notion-automation.git"
+  },
+  "keywords": [
+    "notion",
+    "automation",
+    "nodejs"
+  ],
+  "author": "Taewon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taewonnn/notion-automation/issues"
+  },
+  "homepage": "https://github.com/taewonnn/notion-automation#readme",
+  "dependencies": {
+    "@notionhq/client": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
