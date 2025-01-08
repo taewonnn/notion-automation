@@ -10,6 +10,9 @@ const sourceDbId = '1435f6cbe2fd80c6b09feaf0467a6287';
 const targetDbId = 'f4cb0f3df60f47d8aee73e82fea59b84';
 
 async function moveOldDoneCards() {
+
+  console.log('moveOldDoneCards 함수 시작');
+
   const sevenDaysAgo = new Date();
   sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
 
