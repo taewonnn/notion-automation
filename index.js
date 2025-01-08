@@ -8,7 +8,7 @@ const notion = new Client({ auth: process.env.NOTION_API_KEY });
 // https://www.notion.so/rainbow8/1435f6cbe2fd80c6b09feaf0467a6287?v=1435f6cbe2fd81b7b79f000c223cdb02&pvs=4
 // https://www.notion.so/rainbow8/f4cb0f3df60f47d8aee73e82fea59b84?v=af5fb884bb2644798e71a70129e98437&pvs=4
 const sourceDbId = '1435f6cbe2fd80c6b09feaf0467a6287';
-const targetDbId = 'f4cb0f3df60f47d8aee73e82fea59b84';
+const targetDbId = '1755f6cbe2fd80ebb064eea33784acbe';
 
 async function moveOldDoneCards() {
 
@@ -30,7 +30,7 @@ async function moveOldDoneCards() {
     },
   });
 
-  // console.log('!!',response);
+  console.log('!!',response);
 
   for (const page of response.results) {
     await notion.pages.create({
